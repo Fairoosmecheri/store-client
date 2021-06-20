@@ -1,13 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function AdminHeader() {
     return (
-        <div className='w-full h-16 shadow-md'>
-            <div className='mx-16 flex items-center mt-2'>
+        <AdminHeaderContainer className='px-10 w-full h-16 shadow-md fixed'>
+            <div className='flex items-center'>
                 <img src="/images/logonobg.png" className='h-14' alt=""/>
             </div>
-        </div>
+        </AdminHeaderContainer>
     )
 }
 
 export default AdminHeader
+const AdminHeaderContainer = styled.div`
+    background: white;
+` 
