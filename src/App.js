@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import User from './pages/user/User';
 import Admin from './pages/admin/Admin';
+import { AdminContext } from './store/AdminAuthContext';
 function App() {
   return (
     <div className="App overflow-x-hidden">
@@ -11,7 +12,9 @@ function App() {
             <User />
           </Route>
           <Route path='/admin'>
-            <Admin />
+            <AdminContext>
+              <Admin />
+            </AdminContext>
           </Route>
         </Switch>
       </Router>
