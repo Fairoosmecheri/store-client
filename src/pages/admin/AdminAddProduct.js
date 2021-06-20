@@ -18,7 +18,14 @@ function AdminAddProduct() {
                     <label>Product Quantity</label>
                     <input type="number" className="form-control" placeholder="Product Quantity" />
                 </div>
-        
+                <div className="form-group">
+                    <label>Select Brands</label>
+                    <select className="form-control">
+                    <option>Nike</option>
+                    <option>Puma</option>
+                    <option>Adidas</option>
+                    </select>
+                </div>
                 <div className="form-group">
                     <label>Select Category</label>
                     <select className="form-control">

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 function AdminEditProduct() {
     return (
         <AddProductContainer className='m-5 flex flex-col items-center'>
-            <h1 className='uppercase font-bold text-2xl'>Add Product</h1>
+            <h1 className='uppercase font-bold text-2xl'>Edit Product</h1>
             <form className='w-1/2 mt-5 flex flex-col'>
                 <div className="form-group">
                     <label>Product Name</label>
@@ -17,7 +17,14 @@ function AdminEditProduct() {
                     <label>Product Quantity</label>
                     <input type="number" className="form-control" placeholder="Product Quantity" />
                 </div>
-        
+                <div className="form-group">
+                    <label>Select Brands</label>
+                    <select className="form-control">
+                    <option>Nike</option>
+                    <option>Puma</option>
+                    <option>Adidas</option>
+                    </select>
+                </div>
                 <div className="form-group">
                     <label>Select Category</label>
                     <select className="form-control">
@@ -32,7 +39,7 @@ function AdminEditProduct() {
                 </div>
                 <img src="/images/shirt.jpg" width='100px' alt=""/>
                 <input type="file"/><br/>
-                <button className='bg-blue-500 px-3 py-1 mx-auto text-white rounded-lg shadow-xl hover:bg-blue-600 w-32 mt-3 focus:outline-none'>Add Product</button>
+                <button className='bg-blue-500 px-3 py-1 mx-auto text-white rounded-lg shadow-xl hover:bg-blue-600 w-38 mt-3 focus:outline-none'>Update Product</button>
             </form>
         </AddProductContainer>
     )

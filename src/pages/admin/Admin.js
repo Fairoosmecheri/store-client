@@ -7,6 +7,12 @@ import AdminProducts from './AdminProducts'
 import AdminAddProduct from './AdminAddProduct'
 import styled from 'styled-components'
 import AdminEditProduct from './AdminEditProduct'
+import AdminCategories from './AdminCategories'
+import AdminAddCategory from './AdminAddCategory'
+import AdminEditCategory from './AdminEditCategory'
+import AdminBrands from './AdminBrands'
+import AdminAddBrand from './AdminAddBrand'
+import AdminEditBrand from './AdminEditBrand'
 function Admin() {
     return (
         <div className='flex-col h-screen'>
@@ -26,6 +32,24 @@ function Admin() {
                         </Route>
                         <Route exact path='/admin/edit-product'>
                             <AdminEditProduct />
+                        </Route>
+                        <Route exact path='/admin/categories'>
+                            <AdminCategories />
+                        </Route>
+                        <Route exact path='/admin/add-category'>
+                            <AdminAddCategory />
+                        </Route>
+                        <Route exact path='/admin/edit-category'>
+                            <AdminEditCategory />
+                        </Route>
+                        <Route exact path='/admin/brands'>
+                            <AdminBrands />
+                        </Route>
+                        <Route exact path='/admin/add-brand'>
+                            <AdminAddBrand />
+                        </Route>
+                        <Route exact path='/admin/edit-brand'>
+                            <AdminEditBrand />
                         </Route>
                     </Switch>
                 </AdminView>

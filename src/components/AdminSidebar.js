@@ -7,7 +7,8 @@ function AdminSidebar() {
         <AdminSidebarContainer className='w-1/5 border-r-2 text-black flex flex-col p-5 absolute top-16'>
             <span onClick={()=>history.push('/admin')}>Dashboard</span>
             <span onClick={()=>history.push('/admin/products')}>Products</span>
-            <span>Categories</span>
+            <span onClick={()=>history.push('/admin/brands')}>Brands</span>
+            <span onClick={()=>history.push('/admin/categories')}>Categories</span>
             <span>Orders</span>
             <span>Users</span>
         </AdminSidebarContainer>
